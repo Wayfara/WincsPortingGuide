@@ -146,8 +146,8 @@ extern "C" {
 
 #define SYS_WINCS_WIFI_DEVMODE        		SYS_WINCS_WIFI_MODE_STA
 
-#define SYS_WINCS_WIFI_STA_SSID				"apps_ap1"
-#define SYS_WINCS_WIFI_STA_PWD        		"12345678"
+#define SYS_WINCS_WIFI_STA_SSID				"COG"
+#define SYS_WINCS_WIFI_STA_PWD        		"password"
 #define SYS_WINCS_STA_SECURITY				SYS_WINCS_WPA2 
 #define SYS_WINCS_WIFI_STA_AUTOCONNECT   	true
 
