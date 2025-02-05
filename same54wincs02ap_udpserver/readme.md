@@ -1,4 +1,4 @@
-#  TCP Server Application
+#  AP with UDP Server Application
 
 This WINCS02 application implements a UDP Server. In this application WINCS02 will host a UDP Server in Wi-Fi AP mode. User can connect computer and mobile phone to the AP and access the UDP Server with port **6666**.  After establishing a successful UDP server-client connection, the data exchange will take place.
 
