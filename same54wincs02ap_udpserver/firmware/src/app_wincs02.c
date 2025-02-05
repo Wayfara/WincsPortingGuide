@@ -536,7 +536,7 @@ void APP_WINCS02_Tasks ( void )
             SYS_WINCS_WIFI_SrvCtrl(SYS_WINCS_WIFI_AP_ENABLE, NULL);
             
             SYS_CONSOLE_PRINT("\r\n\r\n[APP] : Wi-Fi [AP] connect to : %s ,password : %s\r\n",SYS_WINCS_WIFI_AP_SSID, SYS_WINCS_WIFI_AP_PWD);
-            appData.state = APP_STATE_WINCS_SERVICE_TASKS;
+            appData.state = APP_STATE_WINCS_CREATE_SOCKET;
             break;
         }
 

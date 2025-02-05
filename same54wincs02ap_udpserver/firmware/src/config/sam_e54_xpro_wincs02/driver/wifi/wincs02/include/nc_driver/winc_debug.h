@@ -52,16 +52,16 @@ Microchip or any third party.
 
 #if (WINC_DEBUG_LEVEL >= WINC_DEBUG_TYPE_ERROR)
 #undef WINC_ERROR_PRINT
-#define WINC_ERROR_PRINT(format, ...)                       do { if (NULL != pfWINCDevDebugPrintf) { pfWINCDevDebugPrintf(WINC_DEBUG_ANSI_SEQ_ERROR format WINC_DEBUG_ANSI_SEQ_END, ##__VA_ARGS__); } } while (false)
+#define WINC_ERROR_PRINT(format, ...)                       do { SYS_CONSOLE_Print(0, WINC_DEBUG_ANSI_SEQ_ERROR format WINC_DEBUG_ANSI_SEQ_END, ##__VA_ARGS__); } while (false)
 #if (WINC_DEBUG_LEVEL >= WINC_DEBUG_TYPE_INFORM)
 #undef WINC_INFORM_PRINT
-#define WINC_INFORM_PRINT(format, ...)                      do { if (NULL != pfWINCDevDebugPrintf) { pfWINCDevDebugPrintf(WINC_DEBUG_ANSI_SEQ_INFORM format WINC_DEBUG_ANSI_SEQ_END, ##__VA_ARGS__); } } while (false)
+#define WINC_INFORM_PRINT(format, ...)                      do { SYS_CONSOLE_Print(0, WINC_DEBUG_ANSI_SEQ_INFORM format WINC_DEBUG_ANSI_SEQ_END, ##__VA_ARGS__); } while (false)
 #if (WINC_DEBUG_LEVEL >= WINC_DEBUG_TYPE_TRACE)
 #undef WINC_TRACE_PRINT
-#define WINC_TRACE_PRINT(format, ...)                       do { if (NULL != pfWINCDevDebugPrintf) { pfWINCDevDebugPrintf(WINC_DEBUG_ANSI_SEQ_TRACE format WINC_DEBUG_ANSI_SEQ_END, ##__VA_ARGS__); } } while (false)
+#define WINC_TRACE_PRINT(format, ...)                       do { SYS_CONSOLE_Print(0, WINC_DEBUG_ANSI_SEQ_TRACE format WINC_DEBUG_ANSI_SEQ_END, ##__VA_ARGS__); } while (false)
 #if (WINC_DEBUG_LEVEL >= WINC_DEBUG_TYPE_VERBOSE)
 #undef WINC_VERBOSE_PRINT
-#define WINC_VERBOSE_PRINT(format, ...)                     do { if (NULL != pfWINCDevDebugPrintf) { pfWINCDevDebugPrintf(WINC_DEBUG_ANSI_SEQ_VERBOSE format WINC_DEBUG_ANSI_SEQ_END, ##__VA_ARGS__); } } while (false)
+#define WINC_VERBOSE_PRINT(format, ...)                     do { SYS_CONSOLE_Print(0, WINC_DEBUG_ANSI_SEQ_VERBOSE format WINC_DEBUG_ANSI_SEQ_END, ##__VA_ARGS__); } while (false)
 #endif /* WINC_DEBUG_TYPE_VERBOSE */
 #endif /* WINC_DEBUG_TYPE_TRACE */
 #endif /* WINC_DEBUG_TYPE_INFORM */
